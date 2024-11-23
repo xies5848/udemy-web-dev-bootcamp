@@ -1,0 +1,60 @@
+.gradient-background{
+    background: linear-gradient(300deg, #FFE6E6, #FFE6E6, #AD88C6 );
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+.hero-img{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
+#hero h1{
+    font-size: 3rem;
+    color: whitesmoke;
+    font-family: serif;
+}
+
+#hero p{
+    font-size: 1.4rem;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+#hero .btn {
+    margin-top: 50px; /* Adjust value as needed */
+}
+
+.hello {
+    font-size: 2rem;
+    color: #7469B6;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+#resume p{
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.custom-btn a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure proper alignment */
+    
+}
+
+.custom-btn{
+    background-color: #7469B6;
+}
+
+.custom-btn a:hover {
+    color: white; /* Ensure white color on hover */
+    background-color: #7469B6;
+}
+
+.custom-btn:hover {
+    color: white; /* Ensure white color on hover */
+    background-color: #6955d5;
+}
