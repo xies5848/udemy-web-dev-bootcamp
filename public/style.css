@@ -1,5 +1,5 @@
 .gradient-background{
-    background: linear-gradient(300deg, #FFE6E6, #FFE6E6, #AD88C6 );
+    background: linear-gradient(300deg, #FFE6E6, #FFE6E6, #AD88C6, #7469B6);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
 }
@@ -57,4 +57,168 @@
 .custom-btn:hover {
     color: white; /* Ensure white color on hover */
     background-color: #6955d5;
+}
+
+.custom-btn {
+    background-color: #7469B6; /* Button background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it look like a button */
+    padding: 10px 20px; /* Add padding for size */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove border */
+    font-size: 1rem; /* Font size */
+    font-family: sans-serif; /* Desired font */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.custom-btn:hover {
+    background-color: #6955d5; /* Change background on hover */
+    color: white; /* Ensure text stays white */
+    text-decoration: none; /* Prevent underline */
+}
+
+.projects-title-section {
+    background: linear-gradient(135deg, #AD88C6, #FFE6E6);
+    color: whitesmoke;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative Background Shapes */
+.projects-title-section::before,
+.projects-title-section::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    animation: float 8s ease-in-out infinite;
+}
+
+.projects-title-section::before {
+    width: 150px;
+    height: 150px;
+    top: -50px;
+    left: -50px;
+}
+
+.projects-title-section::after {
+    width: 200px;
+    height: 200px;
+    bottom: -100px;
+    right: -100px;
+}
+
+/* Title Content */
+.title-content {
+    position: relative;
+    z-index: 2;
+}
+
+.title-content svg {
+    fill: #FFE6E6; /* Icon Color */
+    animation: bounce 3s infinite;
+}
+
+.title-content h2 {
+    font-size: rem;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.title-content p {
+    font-size: 1rem;
+    color: #f1f1f1;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+#projects .row{
+    font-family: sans-serif;
+}
+
+
+
+#about-me img {
+    max-width: 100%; /* Ensure responsiveness */
+    border: 5px solid #E1AFD1; /* Highlight the photo */
+}
+
+#about-me h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for the heading */
+}
+
+#about-me .header{
+    color: white;
+}
+
+#about-me .lead2 {
+    color: grey;
+    font-size: 1.25rem;
+    font-family: sans-serif;
+    line-height: 1.8;
+} 
+
+#about-me p {
+    color: grey;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    line-height: 1.8;
+}
+
+#about-me .btn-primary {
+    background-color: #FFE6E6;
+    border: none;
+    color: #7469B6;
+}
+
+#about-me .btn-primary:hover {
+    background-color: #FFCCCC;
+    color: #5c4e99;
+}
+
+// Contact me
+#contact-me h2{
+    color: #7469B6;
+}
+
+#contact-me {
+    background-color: #f9f9f9; /* Light background */
+    color: #333;
+}
+
+#contact-me h2 {
+    color: #7469B6;
+}
+
+#contact-me .form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#contact-me i {
+    transition: color 0.3s ease;
 }
